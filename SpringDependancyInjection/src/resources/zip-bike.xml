@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+  
+		<!-- <bean id="z" class="beans.Zip" >
+		<property name="zipyear" value="2015">
+		</property>
+		</bean>
+		<bean id="z1" class="beans.Zip" autowire-candidate="false">
+		<property name="zipyear" value="2015">
+		</property>
+		</bean>
+		<bean id="b" class="beans.Bike" autowire="byType"></bean> -->
+		
+		<!-- <bean id="zipEngine" class="beans.Zip">
+		<property name="zipyear" value="2015">
+		</property>
+		</bean>
+		
+		<bean id="b" class="beans.Bike" autowire="byName"></bean> -->
+
+	<bean id="z" class="beans.Zip">
+		<property name="zipyear" value="2015">
+		</property>
+		</bean>
+		<bean id="z1" class="beans.Zip">
+		<property name="zipyear" value="2015">
+		</property>
+		</bean>
+		<bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"></bean>
+		<bean id="b" class="beans.Bike"></bean>
+	
+</beans>
